@@ -1,0 +1,7 @@
+{
+  "source": "data/eval/answers_transformers.json",
+  "total_queries": 100,
+  "faithfulness": 0.83,
+  "answer_relevance": 0.92,
+  "answer_quality": 0.81
+}

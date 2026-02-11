@@ -1,0 +1,7 @@
+setup,concurrent,p50_ms,p99_ms,mean_ms,throughput_qps,gpu_mem_mb
+Baseline (transformers),1,2557.5,7492.1,2844.9,0.352,17463
+vLLM (sequential),1,1644.5,5144.7,1944.8,0.504,25122
+vLLM (concurrent=1),1,1711.4,5150.8,1950.7,0.512,25122
+vLLM (concurrent=5),5,1948.8,5432.8,2264.8,1.366,25122
+vLLM (concurrent=10),10,2423.7,5853.3,2795.9,2.047,25122
+vLLM (concurrent=20),20,3321.2,6707.3,3615.8,3.372,25122

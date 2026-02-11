@@ -1,0 +1,100 @@
+{"query_id": "q001", "query": "How do I create a simple pod in Kubernetes", "answer_refs": ["kubectl run", "Deployment or Job"]}
+{"query_id": "q002", "query": "What is the difference between a pod and a container", "answer_refs": ["smallest deployable units", "one or more application containers"]}
+{"query_id": "q003", "query": "How to deploy my first application to Kubernetes", "answer_refs": ["kubectl create deployment"]}
+{"query_id": "q004", "query": "What are Kubernetes services and why do I need them", "answer_refs": ["a method for exposing a network application that is running as one or more Pods", "don't need to modify your existing application to use an unfamiliar service discovery mechanism"]}
+{"query_id": "q005", "query": "How to check if my pod is running", "answer_refs": ["kubectl get pods", "kubectl describe pod"]}
+{"query_id": "q006", "query": "What is kubectl and how do I use it", "answer_refs": ["command-line tool", "kubectl get", "kubectl apply"]}
+{"query_id": "q007", "query": "How to create a ReplicaSet to bring up three Pods", "answer_refs": ["kubectl apply", "replicas: 3"]}
+{"query_id": "q008", "query": "What is the difference between ClusterIP and NodePort services", "answer_refs": ["Exposes the Service on a cluster-internal IP", "Exposes the Service on each Node's IP at a static port"]}
+{"query_id": "q009", "query": "How do I delete a pod", "answer_refs": ["kubectl delete pod", "kubectl delete -f"]}
+{"query_id": "q010", "query": "How to view logs from a pod", "answer_refs": ["kubectl logs"]}
+{"query_id": "q011", "query": "When to use multiple namespaces", "answer_refs": ["many users spread across multiple teams, or projects"]}
+{"query_id": "q012", "query": "How to expose my application to the internet", "answer_refs": ["kubectl expose", "Services can be exposed in different ways by specifying a type in the spec of the Service"]}
+{"query_id": "q013", "query": "What is a ReplicaSet", "answer_refs": ["maintain a stable set of replica Pods running at any given time", "next-generation ReplicationController"]}
+{"query_id": "q014", "query": "How do I update my application in Kubernetes", "answer_refs": ["scaling and updating", "kubectl patch", "kubectl rollout"]}
+{"query_id": "q015", "query": "What are labels and selectors", "answer_refs": ["key/value pairs", "grouping primitive"]}
+{"query_id": "q016", "query": "How to create a ConfigMap", "answer_refs": ["kubectl create configmap", "kind: ConfigMap"]}
+{"query_id": "q017", "query": "What is the difference between Deployment and StatefulSet", "answer_refs": ["a StatefulSet maintains a sticky identity for each of its Pods"]}
+{"query_id": "q018", "query": "How to mount a volume to a pod", "answer_refs": ["volumes", "volumeMounts", "mountPath"]}
+{"query_id": "q019", "query": "How do I scale my deployment", "answer_refs": ["kubectl scale", "replicas", "kubectl autoscale"]}
+{"query_id": "q020", "query": "What are Kubernetes secrets", "answer_refs": ["kind: Secret", "sensitive data"]}
+{"query_id": "q021", "query": "How to troubleshoot a pod that won't start", "answer_refs": ["kubectl describe pod"]}
+{"query_id": "q022", "query": "What is ingress", "answer_refs": ["exposes HTTP and HTTPS routes from outside the cluster to services within the cluster", "traffic routing"]}
+{"query_id": "q023", "query": "How to create a persistent volume", "answer_refs": ["kind: PersistentVolume", "persistentVolumeClaim"]}
+{"query_id": "q024", "query": "How to use environment variables in pods", "answer_refs": ["env:", "env or envFrom", "kubectl set env"]}
+{"query_id": "q025", "query": "What are init containers", "answer_refs": ["run before app containers", "contain utilities or setup scripts not present in an app image"]}
+{"query_id": "q026", "query": "How do I perform rolling updates", "answer_refs": ["kubectl rollout", "incrementally replacing the current Pods with new ones", "set image"]}
+{"query_id": "q027", "query": "What is the difference between requests and limits for CPU and memory", "answer_refs": ["information to decide which node to place the Pod on", "enforces those limits"]}
+{"query_id": "q028", "query": "How to create a headless service", "answer_refs": ["clusterIP: None", "specifying \"None\" for the cluster IP address (.spec.clusterIP)"]}
+{"query_id": "q029", "query": "What are DaemonSets used for", "answer_refs": ["kind: DaemonSet", "node-local facilities", "run a copy of a Pod"]}
+{"query_id": "q030", "query": "What is Kubernetes API for", "answer_refs": ["query and manipulate the state of objects", "kubectl command-line interface"]}
+{"query_id": "q031", "query": "How to configure horizontal pod autoscaling", "answer_refs": ["HorizontalPodAutoscaler"]}
+{"query_id": "q032", "query": "What are service accounts", "answer_refs": ["type of non-human account", "provides a distinct identity"]}
+{"query_id": "q033", "query": "What is kubelet", "answer_refs": ["stateless process running on a Kubernetes node", "An agent that runs on each node in the cluster"]}
+{"query_id": "q034", "query": "What are custom resource definitions", "answer_refs": ["extensions of the Kubernetes API", "not necessarily available in a default Kubernetes installation"]}
+{"query_id": "q035", "query": "How to set up network policies", "answer_refs": ["kind: NetworkPolicy", "podSelector", "policyTypes", "ingress", "egress"]}
+{"query_id": "q036", "query": "How to configure pod security policies", "answer_refs": ["Built-In PodSecurity Admission Controller", "deprecated"]}
+{"query_id": "q037", "query": "What is RBAC in Kubernetes", "answer_refs": ["method of regulating access", "rbac.authorization.k8s.io"]}
+{"query_id": "q038", "query": "How to monitor node health", "answer_refs": ["Node Problem Detector", "node-problem-detector"]}
+{"query_id": "q039", "query": "How to set up persistent storage with StorageClasses", "answer_refs": ["kind: StorageClass", "PersistentVolumeClaim"]}
+{"query_id": "q040", "query": "What are admission controllers", "answer_refs": ["check the data arriving in a request", "create, delete, or modify objects"]}
+{"query_id": "q041", "query": "How to configure resource quotas", "answer_refs": ["kind: ResourceQuota", "requests.cpu", "limits.cpu"]}
+{"query_id": "q042", "query": "How to implement canary deployments", "answer_refs": ["multiple labels", "track label", "side by side"]}
+{"query_id": "q043", "query": "What is the difference between StatefulSet and Deployment for databases", "answer_refs": ["sticky identity", "identical container spec", "persistent identifier"]}
+{"query_id": "q044", "query": "How to troubleshoot networking issues between pods", "answer_refs": ["kubectl describe node", "curl", "network policies", "DNS resolution"]}
+{"query_id": "q045", "query": "How to set up cluster autoscaling", "answer_refs": ["HorizontalPodAutoscaler", "VerticalPodAutoscaler", "Cluster Proportional Autoscaler", "KEDA", "schedule"]}
+{"query_id": "q046", "query": "What is operator pattern for in Kubernetes", "answer_refs": ["capture the key aim of a human operator who is managing a service or set of services", "use automation to take care of repeatable tasks"]}
+{"query_id": "q047", "query": "How to implement pod disruption budgets", "answer_refs": ["PodDisruptionBudget", "minAvailable", "maxUnavailable", "voluntary disruption"]}
+{"query_id": "q048", "query": "How to configure multi-container pods", "answer_refs": ["Sidecar containers"]}
+{"query_id": "q049", "query": "How to use multiple ingress controllers", "answer_refs": ["ingress class", ".metadata.name"]}
+{"query_id": "q050", "query": "what are the authentication strategies", "answer_refs": ["client certificates", "bearer tokens", "authenticating proxy"]}
+{"query_id": "q051", "query": "How to diagnose DNS problems", "answer_refs": ["test environment", "kubectl get pods", "CoreDNS", "resolv.conf", "kubectl logs"]}
+{"query_id": "q052", "query": "What are taints and tolerations", "answer_refs": ["repel a set of pods", "schedule pods with matching taints", "ensure that pods are not scheduled onto inappropriate nodes"]}
+{"query_id": "q053", "query": "How to configure liveness and readiness probes", "answer_refs": ["livenessProbe", "readinessProbe", "httpGet", "exec", "periodSeconds"]}
+{"query_id": "q054", "query": "How to implement job scheduling with CronJobs", "answer_refs": ["kind: CronJob", "repeating schedule", "cron syntax", "jobTemplate"]}
+{"query_id": "q055", "query": "What is the Kubernetes API server", "answer_refs": ["kube-apiserver", "validates and configures data", "services REST"]}
+{"query_id": "q056", "query": "How to secure communication between services", "answer_refs": ["TLS", "NetworkPolicy", "authentication"]}
+{"query_id": "q057", "query": "What are finalizers in Kubernetes", "answer_refs": ["metadata.finalizers", "deletes resources", "namespaced keys", "cleanup"]}
+{"query_id": "q058", "query": "How to get metrics for system components", "answer_refs": ["metrics endpoint", "name: prometheus"]}
+{"query_id": "q059", "query": "How to configure pod anti-affinity rules", "answer_refs": ["podAntiAffinity", "requiredDuringScheduling"]}
+{"query_id": "q060", "query": "What is the difference between Jobs and CronJobs", "answer_refs": ["repeating schedule"]}
+{"query_id": "q061", "query": "What is the difference between CRDs and Aggregated APIs", "answer_refs": ["CRDs are easier to use", "Aggregated APIs are more flexible", "CRDs are easier to create than Aggregated APIs"]}
+{"query_id": "q062", "query": "What are mutating and validating admission webhooks", "answer_refs": ["MutatingAdmissionWebhook", "ValidatingAdmissionWebhook", "admission controller", "webhook server"]}
+{"query_id": "q063", "query": "How to configure etcd backup and restore", "answer_refs": ["etcdctl snapshot save", "built-in snapshot", "volume snapshot", "Amazon Elastic Block Store"]}
+{"query_id": "q064", "query": "How to implement network segmentation", "answer_refs": ["NetworkPolicy", "namespace isolation", "pod selector", "ingress rules", "egress rules"]}
+{"query_id": "q065", "query": "how to manage TLS Certificates", "answer_refs": ["certificates.k8s.io", "CSR", "kubectl certificate"]}
+{"query_id": "q066", "query": "How to troubleshoot OOMKilled pods", "answer_refs": ["kubectl get pod", "OOMKilling Memory", "out of memory"]}
+{"query_id": "q067", "query": "How to implement advanced observability patterns", "answer_refs": ["Metrics", "Logs", "Traces", "observability tools"]}
+{"query_id": "q068", "query": "What are pod security contexts", "answer_refs": ["at runtime", "part of the Pod and container specifications"]}
+{"query_id": "q069", "query": "How to configure ingress with SSL termination", "answer_refs": ["kind: Secret", "tls.crt", "tls.key"]}
+{"query_id": "q070", "query": "How to implement distributed tracing", "answer_refs": [" OpenTelemetry Protocol", "tracing collectors"]}
+{"query_id": "q071", "query": "What are Network Plugin Requirements", "answer_refs": ["Loopback CNI", "hostPort", "traffic shaping"]}
+{"query_id": "q072", "query": "How to optimize resource allocation", "answer_refs": ["dynamic resource allocation"]}
+{"query_id": "q073", "query": "What is the Kubernetes cloud controller manager", "answer_refs": ["cloud-controller-manager", "control plane component that embeds cloud-specific control logic"]}
+{"query_id": "q074", "query": "What are service accounts and how do they work", "answer_refs": ["type of non-human account", "distinct identity", "ServiceAccount"]}
+{"query_id": "q075", "query": "How to use an HTTP Proxy to access the Kubernetes API", "answer_refs": ["kubectl proxy"]}
+{"query_id": "q076", "query": "How to implement multi-tenancy", "answer_refs": ["namespaces", "kubectl", "NetworkPolicy", "RBAC", "SaaS"]}
+{"query_id": "q077", "query": "What is the cluster DNS and how does it work", "answer_refs": ["CoreDNS"]}
+{"query_id": "q078", "query": "How to configure pod scheduling constraints", "answer_refs": ["nodeSelector", "affinity", "anti-affinity", "taints", "tolerations"]}
+{"query_id": "q079", "query": "How to implement disaster recovery", "answer_refs": ["backing up the etcd cluster data", "etcdutl", "snapshot file"]}
+{"query_id": "q080", "query": "What are ephemeral containers and when to use them", "answer_refs": ["temporarily", "troubleshooting", "inspect service"]}
+{"query_id": "q081", "query": "How to configure custom schedulers", "answer_refs": ["kube-scheduler", "custom scheduler", "schedulerName", "scheduling policy"]}
+{"query_id": "q082", "query": "how to create an external load balancer", "answer_refs": ["type: LoadBalancer", "kubectl expose deployment", "externalTrafficPolicy"]}
+{"query_id": "q083", "query": "What is the difference between CRDs and aggregated APIs", "answer_refs": ["CustomResourceDefinition", "API aggregation", "extension patterns", "apiserver"]}
+{"query_id": "q084", "query": "How to apply pod security standards at the Namespace Level", "answer_refs": ["kubectl label --overwrite", "PodSecurity"]}
+{"query_id": "q085", "query": "How to assign a CPU request and a CPU limit to a container", "answer_refs": ["limits: cpu:", "requests: cpu:"]}
+{"query_id": "q086", "query": "What are projected volumes", "answer_refs": ["projected:", "projected-volume", "downwardAPI", "serviceAccountToken"]}
+{"query_id": "q087", "query": "How to configure cluster-level logging", "answer_refs": ["node-level logging agent", "dedicated sidecar container", "push logs directly"]}
+{"query_id": "q088", "query": "Baseline checklist for ensuring security", "answer_refs": ["Authentication & Authorization", "Network security", "Pod security", "Secrets"]}
+{"query_id": "q089", "query": "What is the Kubernetes garbage collector", "answer_refs": ["clean up cluster resources", "owner references", "cascading deletion", "orphan"]}
+{"query_id": "q090", "query": "what is API-initiated eviction", "answer_refs": ["Eviction object", "triggers graceful pod termination", "Eviction API"]}
+{"query_id": "q091", "query": "How to use multiple ports for a Service", "answer_refs": ["give all of your ports names", "ports:"]}
+{"query_id": "q092", "query": "What are volume snapshots and how to use them", "answer_refs": ["snapshot of a volume", "VolumeSnapshotContent", "kind: VolumeSnapshot"]}
+{"query_id": "q093", "query": "How to configure custom admission policies", "answer_refs": ["admission webhook", "MutatingAdmissionWebhook", "ValidatingAdmissionWebhook", "ValidatingAdmissionPolicy"]}
+{"query_id": "q094", "query": "What is Kubernetes API server default port", "answer_refs": ["6443"]}
+{"query_id": "q095", "query": "how to reserve a number of process IDs for the system use", "answer_refs": ["--system-reserved", "--kube-reserved"]}
+{"query_id": "q096", "query": "How to validate IPv4/IPv6 dual-stack enabled clusters", "answer_refs": [".spec.podCIDRs", ".status.addresses", "range .status.podIPs"]}
+{"query_id": "q097", "query": "How to implement automated certificate management", "answer_refs": ["certificates.k8s.io", "kubelet", "--rotate-certificates"]}
+{"query_id": "q098", "query": "What are pod topology spread constraints", "answer_refs": ["control how Pods are spread", "high availability", "efficient resource utilization"]}
+{"query_id": "q099", "query": "How to migrate kubernetes objects", "answer_refs": ["kubectl create secret", "CRD"]}
+{"query_id": "q100", "query": "How to configure and schedule GPUs", "answer_refs": ["device plugins", "NFD", "kubectl label nodes"]}

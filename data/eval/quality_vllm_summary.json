@@ -1,0 +1,7 @@
+{
+  "source": "data/eval/answers_vllm.json",
+  "total_queries": 100,
+  "faithfulness": 0.83,
+  "answer_relevance": 0.93,
+  "answer_quality": 0.8
+}

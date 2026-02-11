@@ -1,0 +1,25 @@
+# Python-generated files
+__pycache__/
+
+# Virtual environments
+.venv
+uv.lock
+.python-version
+
+# Rendered website data
+data/rendered/
+
+# Middle data or results
+data/bench/*
+!data/bench/summary.csv
+data/eval/*
+!data/eval/queries.jsonl
+!data/eval/retrieval_summary.json
+!data/eval/quality_transformers_summary.json
+!data/eval/quality_vllm_summary.json
+data/processed/
+data/vector_index/
+
+scripts/
+
+logs/
